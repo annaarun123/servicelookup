@@ -20,23 +20,27 @@ Following API endpoints are to be designed
 
 Response:
 ```
-[
-	{
-		"service_id": 1,
-		"name": "service name",
-		"description": "service description",
-		"versions": [
-			{
-				"version_id": 1,
-				"service_id": 1,
-				"name": "0.1",
-				"description": "First alpha version ",
-				"is_latest": false,
-				"is_deprecated": true
-			},
-		]
-	}
-]
+{
+	"services": [
+		{
+			"service_id": 1,
+			"name": "service name",
+			"description": "service description",
+			"versions": [
+				{
+					"version_id": 1,
+					"service_id": 1,
+					"name": "0.1",
+					"description": "First alpha version ",
+					"is_latest": false,
+					"is_deprecated": true
+				},
+			]
+		}
+	]
+	"nextOffset": 2,
+	"total": "7"
+}
 ```
 
 
@@ -45,6 +49,7 @@ Response:
 Response:
 
 ```
+
 	{
 		"service_id": 1,
 		"name": "service name",
@@ -60,6 +65,7 @@ Response:
 			},
 		]
 	}
+
 ```
 
 ### Data Model
