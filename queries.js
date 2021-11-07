@@ -58,7 +58,7 @@ const getServiceById = async (request, response) => {
   
   let promises = serviceRows.rows.map(service=>getVersionsByService(service));
   let servicesResult = await Promise.all(promises);
-  response.status(200).json(servicesResult);
+  response.status(200).json(servicesResult[0]);
 
 }
 
