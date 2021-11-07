@@ -103,9 +103,9 @@ Response:
 
 ### Code setup
 
-Set up prerequisites
+**Set up prerequisites**
 
-One- time set up Create DB schema
+**One- time set up Create DB schema**
 
 Run the `dbsetup.sql` in `psql`
 
@@ -116,12 +116,12 @@ Run the `dbseed.sql` in `psql`
 `psql api -f dbseed.sql`
 
 
-Install npm packagess
+**Install npm packagess**
 
 `npm install`
 
 
-Run the app
+**Run the app**
 
 `node index.js`
 
@@ -130,12 +130,12 @@ Run the app
 
 ### Test
 
-`GET services` by search query and offset and limit - Returns a list of services along wth versions, and also the total and nextOffset to query for next page of results.
+*GET services* by search query and offset and limit - Returns a list of services along wth versions, and also the total and nextOffset to query for next page of results.
 
 `curl -s "http://localhost:3000/services?offset=0&limit=2&term=service" | python -mjson.tool`
 
 
-`GET service/:id` by service id - Returns details of the service and versions
+*GET service/:id* by service id - Returns details of the service and versions
 
 `curl -s "http://localhost:3000/service/2" | python -mjson.tool`
 
